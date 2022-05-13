@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: #0D1321;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #0D1321;
+    color: #0D1321;
+    display: flex;
+    font-family: 'Arsenal', sans-serif;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0.5rem 0 0.5rem 0;
+    position: sticky;
+    top: 0px;
+}
+
+header img {
+    max-height: 2em;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+nav {
+    float: right;
+    margin: 0 -1rem 0 0;
+}
+
+nav ul,
+nav li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+nav li>a {
+    color: #1D2D44;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1rem 1rem 1rem 1rem;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+nav li>a:hover {
+    color: #748CAB;
+}
+
+main {
+    font-family: 'Arsenal', sans-serif;
+    margin: 0 auto 0 auto;
+}
+
+section {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0;
+}
+
+color-palette {
+    align-content: space-between;
+    display: flex;
+}
+
+color-swatch {
+    color: #ffffff;
+    display: flex;
+    flex-basis: 20%;
+    justify-content: center;
+    padding: 8rem 0 8rem 0;
+    text-align: center;
+}
+
+.swatch-1 {
+    background-color: #0D1321;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.swatch-2 {
+    background-color: #1D2D44;
+}
+
+.swatch-3 {
+    background-color: #3E5C76;
+}
+
+.swatch-4 {
+    background-color: #748CAB;
+}
+
+.swatch-5 {
+    background-color: #F0EBD8;
+    border-radius: 0 1rem 1rem 0;
+    color: #000000;
+}
+
+.swatch {
+    cursor: pointer;
+    transition: flex-basis 0.6s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+.swatch:hover {
+    flex-basis: 30%;
+    transition: flex-basis 0.6s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+section.fonts {
+    align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+font-section {
+    flex-grow: 1;
+}
+
+font-section p {
+    font-size: 1.2rem;
+}
+
+.arsenal {
+    font-family: 'Arsenal', sans-serif;
+}
+
+.eb-garamond {
+    font-family: 'EB Garamond', serif;
+}
+
+.gentium-book-basic {
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.text-styles h1,
+.text-styles p {
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+}
+
+p.byline {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+p.article-text {
+    font-size: 1.2rem;
+}
+
+h1.article-headline {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+code {
+    background-color: #e6e6e6;
+    border-radius: 0.5rem;
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    margin: 0 0 2rem 0;
+    padding: 1rem;
+}
+
+code::selection {
+    background-color: #748CAB;
+    color: #ffffff;
+}
+
+footer {
+    border-top: 1px solid #0D1321;
+    font-family: 'Arsenal', sans-serif;
+}
+
+footer a {
+    color: #1D2D44;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #748CAB;
+}
+
+@media screen and (min-width: 1920px) {
+    main {
+        padding: 0 20% 0 20%;
+        width: 100%;
+    }
+
+    header h1 {
+        margin: 0 0 0 20%;
+    }
+
+    nav {
+        margin: 0 calc(20% - 1em) 0 0;
+    }
+
+    footer {
+        margin: 0 20% 0 20%;
+    }
+}
+
+@media screen and (max-width: 1919px) {
+    main {
+        padding: 0 10% 0 10%;
+        width: 100%;
+    }
+
+    header h1 {
+        margin: 0 0 0 10%;
+    }
+
+    nav {
+        margin: 0 calc(10% - 1em) 0 0;
+    }
+
+    footer {
+        margin: 0 10% 0 10%;
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Website Style Guide</title>
+</head>
+
+<body>
+    <!-- Header and Navigation Menu -->
+    <header>
+        <h1>Website Style Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="#palette">Palette</a></li>
+                <li><a href="#fonts">Fonts</a></li>
+                <li><a href="#text">Text Styles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Color Pallete/Swatches -->
+        <h2 id="palette">Palette</h2>
+        <section>
+            <color-palette>
+                <color-swatch class="swatch-1 swatch">
+                    Rich Black
+                    <br>#0D1321
+                </color-swatch>
+                <color-swatch class="swatch-2 swatch">
+                    Prussian Blue
+                    <br>#1D2D44
+                </color-swatch>
+                <color-swatch class="swatch-3 swatch">
+                    Electric Blue
+                    <br>#3E5C76
+                </color-swatch>
+                <color-swatch class="swatch-4 swatch">
+                    Shadow Blue
+                    <br>#748CAB
+                </color-swatch>
+                <color-swatch class="swatch-5 swatch">
+                    Eggshell
+                    <br>#F0EBD8
+                </color-swatch>
+            </color-palette>
+        </section>
+        <!-- Font Section -->
+        <h2 id="fonts">Fonts</h2>
+        <section class="fonts">
+            <font-section>
+                <h3>Arsenal</h3>
+                <p class="arsenal regular">The quick brown fox jumps over the lazy dog.</p>
+                <p class="arsenal italic">The quick brown fox jumps over the lazy dog.</p>
+                <p class="arsenal bold">The quick brown fox jumps over the lazy dog.</p>
+            </font-section>
+            <font-section>
+                <h3>EB Garamond</h3>
+                <p class="eb-garamond regular">The quick brown fox jumps over the lazy dog.</p>
+                <p class="eb-garamond italic">The quick brown fox jumps over the lazy dog.</p>
+                <p class="eb-garamond bold">The quick brown fox jumps over the lazy dog.</p>
+            </font-section>
+            <font-section>
+                <h3>Gentium Book Basic</h3>
+                <p class="gentium-book-basic regular">The quick brown fox jumps over the lazy dog.</p>
+                <p class="gentium-book-basic italic">The quick brown fox jumps over the lazy dog.</p>
+                <p class="gentium-book-basic bold">The quick brown fox jumps over the lazy dog.</p>
+            </font-section>
+        </section>
+        <!-- Text Style Section -->
+        <h2 id="text">Text Styles</h2>
+        <section class="text-styles">
+            <h1 class="article-headline">Article Headline</h1>
+            <pre><code>h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+}</code></pre>
+            <p class="eb-garamond byline">Author byline</p>
+            <pre><code>p.byline {
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+}</code></pre>
+            <p class="gentium-book-basic article-text">Article text. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Enim reprehenderit sunt possimus itaque, veritatis omnis quod incidunt eveniet quis magni,
+                inventore sint deleniti esse architecto minima ducimus fugit exercitationem alias?</p>
+        </section>
+        <pre><code>p.article-text {
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: 'Gentium Book Basic', serif;
+    font-style: normal;
+}</code></pre>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <p>Designed by Rodrigo Pimentel for the <a
+                href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path">Codecademy Full Stack
+                Development Course</a></p>
+    </footer>
+</body>
+
+</html>
